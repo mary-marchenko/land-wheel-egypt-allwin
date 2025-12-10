@@ -1,6 +1,7 @@
 $black: #090A18
 $green-blue: #00CDCF
-$green-blue-hover: #09D6D8
+$green-blue-hover-maket: #09D6D8
+$green-blue-hover: #00b4b7
 $blue: #3396D3
 $grey: rgba(251, 252, 253, 0.60)
 $grey2: rgba(251, 252, 253, 0.90)
@@ -97,7 +98,8 @@ body
   &__secondWin
     width: 353px
     min-width: 353px
-    height: 550px
+    height: 481px
+    min-height: 481px
     background: url('../img/popup-bg.png') no-repeat 50% 0/contain
     //transform: scale(1.4)
   &__firstWin
@@ -124,7 +126,7 @@ body
       position: absolute
       max-width: fit-content
       width: 450px
-      top: 36%
+      top: 42%
       animation: levitate 3.3s ease-in-out infinite
     &-win
       white-space: nowrap
@@ -187,16 +189,16 @@ body
       &:hover
         transform: scale(1.1)
         background: $green-blue-hover
-    &-bottom
-      margin-top: 102px
-      color: $grey3
-      font-family: $font-exo2-regular
-      font-size: 10px
-      line-height: 14px
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
-      width: 295px
-      text-align: center
-      opacity: 0.7
+    //&-bottom
+    //  margin-top: 102px
+    //  color: $grey3
+    //  font-family: $font-exo2-regular
+    //  font-size: 10px
+    //  line-height: 14px
+    //  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
+    //  width: 295px
+    //  text-align: center
+    //  opacity: 0.7
   &__secondWin
     padding: 68px 40px 0
     &-info
@@ -244,16 +246,16 @@ body
           padding-top: 5px
           display: inline-block
           color: $white
-    &-bottom
-      margin-top: 102px
-      color: $grey3
-      font-family: $font-exo2-regular
-      font-size: 10px
-      line-height: 14px
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
-      width: 295px
-      text-align: center
-      opacity: 0.7
+    //&-bottom
+    //  margin-top: 102px
+    //  color: $grey3
+    //  font-family: $font-exo2-regular
+    //  font-size: 10px
+    //  line-height: 14px
+    //  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25)
+    //  width: 295px
+    //  text-align: center
+    //  opacity: 0.7
     &-btn
       max-width: 178px
       cursor: pointer
@@ -398,7 +400,7 @@ body
         @media screen and (max-width: 500px) and (orientation: portrait)
           background: url("../img/wheel-frame-mob-2.png") no-repeat 50% 100%/contain
         @media (max-width: 950px) and (orientation: landscape) and (max-height: 500px)
-          background: url("../img/wheel-frame-mob-2.png") no-repeat 0 100%/contain
+          background: url("../img/wheel-frame-mob-2.png") no-repeat 50% 100%/contain
       &-reel
         width: 800px
         height: 800px
@@ -457,22 +459,22 @@ body
     align-items: center
     overflow: hidden
     &-row
+      padding-top: 15px
       height: fit-content
       width: 100%
       display: flex
       align-items: center
       justify-content: space-between
-    &-text
-      max-width: 470px
-      font-family: $font-exo2-regular
-      font-size: 16px
-      line-height: 22px
-      color: $grey
+    //&-text
+    //  max-width: 470px
+    //  font-family: $font-exo2-regular
+    //  font-size: 16px
+    //  line-height: 22px
+    //  color: $grey
     &-info
       display: flex
       align-items: center
       &-licensed
-        margin-top: 85px
         display: flex
         align-items: center
         &-img
